@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"8.0.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+
+  <meta name="description" content="blog">
+<meta property="og:type" content="website">
+<meta property="og:title" content="cypher blog">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="cypher blog">
+<meta property="og:description" content="blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="cypher">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://yoursite.com/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>cypher blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">cypher blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">cypher</p>
+  <div class="site-description" itemprop="description">blog</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </section>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+      
+
+      
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/10/30/%E8%BF%99%E6%98%AF%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cypher">
+      <meta itemprop="description" content="blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cypher blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/10/30/%E8%BF%99%E6%98%AF%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="post-title-link" itemprop="url">这是我的第一篇文章</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-10-30 11:53:41" itemprop="dateCreated datePublished" datetime="2020-10-30T11:53:41+08:00">2020-10-30</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2019-07-11 09:34:44" itemprop="dateModified" datetime="2019-07-11T09:34:44+08:00">2019-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" itemprop="url" rel="index"><span itemprop="name">测试文章</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>博客主题推荐</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/10/30/%E8%BF%99%E6%98%AF%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/10/26/%E3%80%8A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3java%E8%99%9A%E6%8B%9F%E6%9C%BA%E3%80%8B-%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cypher">
+      <meta itemprop="description" content="blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cypher blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/10/26/%E3%80%8A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3java%E8%99%9A%E6%8B%9F%E6%9C%BA%E3%80%8B-%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/" class="post-title-link" itemprop="url">《深入理解Java虚拟机》 笔记（一）</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-10-26 19:19:21" itemprop="dateCreated datePublished" datetime="2020-10-26T19:19:21+08:00">2020-10-26</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-10-30 14:16:51" itemprop="dateModified" datetime="2020-10-30T14:16:51+08:00">2020-10-30</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%B8%AA%E4%BA%BA%E8%AE%A1%E5%88%92/" itemprop="url" rel="index"><span itemprop="name">个人计划</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="一、自动内存管理"><a href="#一、自动内存管理" class="headerlink" title="一、自动内存管理"></a>一、自动内存管理</h2><h3 id="1-Java内存区域与内存溢出异常（1d）"><a href="#1-Java内存区域与内存溢出异常（1d）" class="headerlink" title="1.Java内存区域与内存溢出异常（1d）"></a>1.Java内存区域与内存溢出异常（1d）</h3><h4 id="1）运行时数据区域"><a href="#1）运行时数据区域" class="headerlink" title="1）运行时数据区域"></a>1）运行时数据区域</h4><p><img src="(/images/Java%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA.png)"></p>
+<hr>
+<p><strong>程序计数器</strong></p>
+<ul>
+<li>用于控制程序的走向，是线程私有的。</li>
+<li>JVM的字节码解释器通过改变程序计数器的值来获取下一行执行的代码，程序的分支，循环，跳转，异常处理以及线程恢复都需要依赖计数器。</li>
+<li>当程序计数器指向一个Java方法时，指向的是Java方法对应的直接地址；当指向一个本地方法时，计数器的值为null，这是Java虚拟机规范中唯一一个没有OOM的区域。</li>
+</ul>
+<hr>
+<p><strong>Java虚拟机栈</strong></p>
+<ul>
+<li>用于控制方法执行的顺序，生命周期与线程相同，是线程私有的。</li>
+<li>线程中每当有一个方法被执行时，都会有一个栈帧被创建并被压入虚拟机栈中，每个栈帧都会存储方法的局部变量表，操作数栈，动态常量以及方法出口</li>
+<li>如果栈帧的深度大于虚拟机规定的最大值，则会报StackOutExcepiton；栈帧的深度可以扩展，如果扩展不了则会报OOM。</li>
+</ul>
+<hr>
+<p><strong>Java本地方法栈</strong></p>
+<ul>
+<li>跟虚拟机栈基本相同，只是服务对象不同，本地方法栈服务于本地方法</li>
+<li>HotSpot中将两者放到了一起</li>
+</ul>
+<hr>
+<p><strong>Java堆</strong></p>
+<ul>
+<li>JVM用于存储对象实例的地方，是线程公有的。</li>
+<li>Java内存管理最主要的地方，也称为GC堆，Jdk8之前基本采用分代算法，分为新生代，老年代</li>
+<li>内部存在TLAB（本地方法缓存），这是堆为每个线程分配的一块区域，用于线程创建对象使用，提高了内存分配的效率，方便管理。</li>
+</ul>
+<hr>
+<p><strong>方法区</strong></p>
+<ul>
+<li>用于存储类型信息，常量以及静态变量，是线程公有的。</li>
+<li>HotSpot在jdk8之前使用永久代实现，jdk8后使用元空间替代</li>
+</ul>
+<hr>
+<p><strong>运行时常量池</strong></p>
+<ul>
+<li>用于存储运行时产生的常量</li>
+</ul>
+<hr>
+<p><strong>直接内存</strong></p>
+<ul>
+<li>jdk1.4引入了NIO，这是一种基于通道的IO方式，可以直接在JVM管理范围外进行直接的内存分配。</li>
+</ul>
+<hr>
+<h3 id="2-垃圾收集器与内存分配策略（3d）"><a href="#2-垃圾收集器与内存分配策略（3d）" class="headerlink" title="2.垃圾收集器与内存分配策略（3d）"></a>2.垃圾收集器与内存分配策略（3d）</h3><h3 id="3-虚拟机性能监控、故障处理工具（2d）"><a href="#3-虚拟机性能监控、故障处理工具（2d）" class="headerlink" title="3.虚拟机性能监控、故障处理工具（2d）"></a>3.虚拟机性能监控、故障处理工具（2d）</h3><h3 id="4-调优案例分析与实战（todo）"><a href="#4-调优案例分析与实战（todo）" class="headerlink" title="4.调优案例分析与实战（todo）"></a>4.调优案例分析与实战（todo）</h3>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/07/15/%E4%B8%AA%E4%BA%BA%E8%AE%A1%E5%88%921/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cypher">
+      <meta itemprop="description" content="blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cypher blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/07/15/%E4%B8%AA%E4%BA%BA%E8%AE%A1%E5%88%921/" class="post-title-link" itemprop="url">个人计划1</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2019-07-15 19:19:21 / 修改时间：11:31:54" itemprop="dateCreated datePublished" datetime="2019-07-15T19:19:21+08:00">2019-07-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hexo%E5%AE%9E%E8%B7%B5/" itemprop="url" rel="index"><span itemprop="name">hexo实践</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>最近公司项目上线后，工作很少，基本上查找Bug以及性能优化相关的工作。</p>
+<p>之前一直学习微服务，感觉对于性能优化也没有做过什么了解，正好趁着这个机会去学习一下。</p>
+<p>对于学习的一些计划，做一个大概的规划：</p>
+<p><strong><em>学习内容</em></strong> : MySQL 数据库<br>*<strong>计划学习时间*** : 2个月<br>*</strong>参考书籍*** ： 《高性能MySQL》<br>*<strong>学习方式*** ： 笔记 + 针对性问题分析<br>*</strong>需要掌握的知识点*** : </p>
+<blockquote>
+<ol>
+<li>数据库隔离级别有哪些，各自的含义是什么，MYSQL默认的隔离级别是是什么。  </li>
+<li>什么是幻读。  </li>
+<li>MYSQL有哪些存储引擎，各自优缺点。  </li>
+<li>高并发下，如何做到安全的修改同一行数据。  </li>
+<li>乐观锁和悲观锁是什么，INNODB的标准行级锁有哪2种，解释其含义。  </li>
+<li>SQL优化的一般步骤是什么，怎么看执行计划，如何理解其中各个字段的含义。  </li>
+<li>数据库会死锁吗，举一个死锁的例子，mysql怎么解决死锁。  </li>
+<li>MYsql的索引原理，索引的类型有哪些，如何创建合理的索引，索引如何优化。  </li>
+<li>聚集索引和非聚集索引的区别。  </li>
+<li>select for update 是什么含义，会锁表还是锁行或是其他。  </li>
+<li>为什么要用Btree实现，它是怎么分裂的，什么时候分裂，为什么是平衡的。  </li>
+<li>数据库的ACID是什么。  </li>
+<li>某个表有近千万数据，CRUD比较慢，如何优化。  </li>
+<li>Mysql怎么优化table scan的。  </li>
+<li>如何写sql能够有效的使用到复合索引。  </li>
+<li>mysql中in 和exists 区别。  </li>
+<li>数据库自增主键可能的问题。  </li>
+<li>MVCC的含义，如何实现的。  </li>
+<li>你做过的项目里遇到分库分表了吗，怎么做的，有用到中间件么，比如sharding jdbc等,他  </li>
+<li>们的原理知道么。  </li>
+<li>MYSQL的主从延迟怎么解决。   </li>
+<li>数据库的分库分表、项目之间的垂直拆分</li>
+</ol>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/07/10/%E4%BD%BF%E7%94%A8git%E5%B0%86%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%BB%93%E5%BA%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cypher">
+      <meta itemprop="description" content="blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cypher blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/07/10/%E4%BD%BF%E7%94%A8git%E5%B0%86%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%BB%93%E5%BA%93/" class="post-title-link" itemprop="url">使用git将本地文件上传到github仓库</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-07-10 19:37:00" itemprop="dateCreated datePublished" datetime="2019-07-10T19:37:00+08:00">2019-07-10</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2019-07-11 09:34:44" itemprop="dateModified" datetime="2019-07-11T09:34:44+08:00">2019-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="1-linux下安装git"><a href="#1-linux下安装git" class="headerlink" title="1.linux下安装git"></a>1.linux下安装git</h3><h3 id="2-生成公钥"><a href="#2-生成公钥" class="headerlink" title="2.生成公钥"></a>2.生成公钥</h3><pre><code>`ssh-keygen -t rsa -C &quot;yourEmail@email.com&quot;`  </code></pre>
+<p>将邮箱替换成自己的邮箱后，输入命令，会提示你以下信息</p>
+<blockquote>
+<p>Enter file in which to save the key (/root/.ssh/id_rsa):<br>Enter passphrase (empty for no passphrase):<br>Enter same passphrase again:     </p>
+</blockquote>
+<p>不输入直接按enter键，则按照默认的方式生成公钥，默认生成地址为括号中提示的地址 ___/root/.ssh/id_rsa___</p>
+<h3 id="3-添加公钥到GitHub"><a href="#3-添加公钥到GitHub" class="headerlink" title="3. 添加公钥到GitHub"></a>3. 添加公钥到GitHub</h3><p>打开GitHub，登录自己的账号在 Setting 里找到 <em>SSH and GPG keys</em> 选项卡，点击 <em>New SSh key</em> 按钮。<br>填写标题，复制刚刚生成的公钥 _（文件名称为id_rsa.pub）_ 填写到key中，然后点击 <em>Add SSH Key</em> 按钮。</p>
+<h3 id="4-测试是否能够连接"><a href="#4-测试是否能够连接" class="headerlink" title="4. 测试是否能够连接"></a>4. 测试是否能够连接</h3><p>回到linux系统，输入命令：</p>
+<p><code>ssh -T git@github.com</code></p>
+<p>提示以下信息：</p>
+<blockquote>
+<p>Are you sure you want to continue connecting (yes/no)?</p>
+</blockquote>
+<p>输入yes，如果成功会显示：</p>
+<blockquote>
+<p>Hi XXX ! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
+</blockquote>
+<h3 id="5-设置用户信息"><a href="#5-设置用户信息" class="headerlink" title="5. 设置用户信息"></a>5. 设置用户信息</h3><p>输入以下命令设置用户名和Email</p>
+<p><code>git config --global user.name &quot; yourUserName&quot; </code><br><code>git config --global user.email &quot;yourEmail&quot; </code></p>
+<h3 id="6-创建远程仓库和本地仓库并将其关联"><a href="#6-创建远程仓库和本地仓库并将其关联" class="headerlink" title="6. 创建远程仓库和本地仓库并将其关联"></a>6. 创建远程仓库和本地仓库并将其关联</h3><h4 id="1）创建远程仓库"><a href="#1）创建远程仓库" class="headerlink" title="1）创建远程仓库"></a>1）创建远程仓库</h4><p>打开GitHub，点击 <em>Your Repositories</em> ，新建一个远程仓库，并复制远程仓库的地址。</p>
+<h4 id="2）创建本地仓库"><a href="#2）创建本地仓库" class="headerlink" title="2）创建本地仓库"></a>2）创建本地仓库</h4><p>回到linux，打开想要创建仓库的文件位置，输入以下命令：</p>
+<p><code>git init</code></p>
+<p>输入命令后，会在当前文件夹下创建一个 <em>.git</em> 文件夹，用于存储所有版本，标记信息</p>
+<h4 id="3）关联本地，远程仓库"><a href="#3）关联本地，远程仓库" class="headerlink" title="3）关联本地，远程仓库"></a>3）关联本地，远程仓库</h4><p>在linux下，输入命令：</p>
+<p><code>git remote add origin https://yourRepo</code></p>
+<p><em><a target="_blank" rel="noopener" href="https://yourrepo/">https://yourRepo</a></em> 换成刚刚复制的远程仓库地址</p>
+<h3 id="7-提交本地文件，并推到远程"><a href="#7-提交本地文件，并推到远程" class="headerlink" title="7. 提交本地文件，并推到远程"></a>7. 提交本地文件，并推到远程</h3><p>输入以下命令：</p>
+<blockquote>
+<p>给提交的文件或文件夹添加标记<br><code>git add 文件位置 </code>  </p>
+</blockquote>
+<blockquote>
+<p>提交本地文件到head<br><code>git commit -m &quot;提交描述&quot; </code></p>
+</blockquote>
+<blockquote>
+<p>将已经提交的文件推到远程<br><code>git push origin master</code></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/07/09/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%9E%E8%B7%B51/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cypher">
+      <meta itemprop="description" content="blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cypher blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/07/09/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%9E%E8%B7%B51/" class="post-title-link" itemprop="url">hexo个人博客实践1</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-07-09 17:39:29" itemprop="dateCreated datePublished" datetime="2019-07-09T17:39:29+08:00">2019-07-09</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2019-07-11 10:37:03" itemprop="dateModified" datetime="2019-07-11T10:37:03+08:00">2019-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hexo%E5%AE%9E%E8%B7%B5/" itemprop="url" rel="index"><span itemprop="name">hexo实践</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="1-blockquote-引用快"><a href="#1-blockquote-引用快" class="headerlink" title="1. blockquote 引用快"></a>1. blockquote 引用快</h3><blockquote><p>别号：quote</p>
+</blockquote>
+
+<blockquote><p>这是blockquote代码块，语法：<br>blockquote [author[, source]] [link] [source_link_title]</p>
+</blockquote>
+
+<blockquote><p>这是blockquote(引用书上的句子)测试文档</p>
+<footer><strong>cypher， 这是我说的</strong></footer></blockquote>
+
+<blockquote><p>这是blockquote(引用书上的句子)测试文档</p>
+<footer><strong>cypher， 这是我说的</strong></footer></blockquote>
+
+<h3 id="2-codeblock-代码块"><a href="#2-codeblock-代码块" class="headerlink" title="2. codeblock 代码块"></a>2. codeblock 代码块</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">别名：code</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这是 codeblock 代码块，语法</span><br><span class="line">codeblock [title] [lang:language] [url] [link text]</span><br></pre></td></tr></table></figure>
+
+<p>这是 codeblock 代码块，指定语言lang:java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="keyword">static</span> <span class="title">main</span><span class="params">(String args)</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;Hello,World!!&quot;</span>);</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+<p>这是 codeblock 的附加说明和网址</p>
+<figure class="highlight plain"><figcaption><span>博客</span><a target="_blank" rel="noopener" href="https://cypher0019.github.io">cypher的个人博客</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">个人博客地址</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-Pull-Quote"><a href="#3-Pull-Quote" class="headerlink" title="3. Pull Quote"></a>3. Pull Quote</h3><blockquote class="pullquote [class]"><p>content  </p>
+</blockquote>  
+
+<h3 id="4-iframe"><a href="#4-iframe" class="headerlink" title="4. iframe"></a>4. iframe</h3><blockquote>
+<p>在文章中插入 iframe， 语法：<br>iframe url [width] [height]  </p>
+</blockquote>
+<h3 id="5-Image"><a href="#5-Image" class="headerlink" title="5. Image"></a>5. Image</h3><blockquote>
+<p>在文章中插入指定大小的图片，语法：<br>img [class names] /path/to/image [width] [height] [title text [alt text]]  </p>
+</blockquote>
+<h3 id="6-Link"><a href="#6-Link" class="headerlink" title="6. Link"></a>6. Link</h3><blockquote>
+<p>在文章中插入链接，并自动给外部链接添加 target=”_blank” 属性，语法：<br>link text url [external] [title]  </p>
+</blockquote>
+<h3 id="7-引用资源"><a href="#7-引用资源" class="headerlink" title="7. 引用资源"></a>7. 引用资源</h3><blockquote>
+<p>引用文章的资源，语法：  </p>
+  
+   
+  
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/07/09/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%9E%E8%B7%B52/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="cypher">
+      <meta itemprop="description" content="blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cypher blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/07/09/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%9E%E8%B7%B52/" class="post-title-link" itemprop="url">hexo个人博客实践2</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-07-09 17:39:29" itemprop="dateCreated datePublished" datetime="2019-07-09T17:39:29+08:00">2019-07-09</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2019-07-11 15:58:55" itemprop="dateModified" datetime="2019-07-11T15:58:55+08:00">2019-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hexo%E5%AE%9E%E8%B7%B5/" itemprop="url" rel="index"><span itemprop="name">hexo实践</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="1-资源文件夹"><a href="#1-资源文件夹" class="headerlink" title="1.资源文件夹"></a>1.资源文件夹</h3><p>资源（ASSet）指 <code>source</code> 文件夹中除文章外的所有文件。</p>
+<blockquote>
+<p>例如： 将图片放到 <code>source/images</code> 文件夹中，在通过 <code>![](/images/image.jpg)</code> 的方式访问</p>
+</blockquote>
+<h4 id="文章资源文件夹"><a href="#文章资源文件夹" class="headerlink" title="文章资源文件夹"></a>文章资源文件夹</h4><p>将 <code>_config.yml</code> 文件中的 <code>post_asset_folder</code> 选项设置为 true，就可以打开文章资源文件夹。  </p>
+<p>此功能打开时，每次输入 <code>hexo new title</code> 命令，都会生成一个与markdown文件同名的文件夹，这个文件夹中的资源文件可以通过相对路径进行链接。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+  
+
+
+
+      
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">cypher</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
